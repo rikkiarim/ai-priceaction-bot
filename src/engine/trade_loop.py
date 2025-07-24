@@ -1,4 +1,10 @@
 # src/engine/trade_loop.py
+import os
+from dotenv import load_dotenv
+from notifier.telegram import TelegramNotifier
+from engine.executor         import TradeExecutor
+from engine.broker           import AlpacaBrokerClient
+from engine.risk_manager     import RiskManager
 
 from dotenv import load_dotenv
 from notifier.telegram import TelegramNotifier
